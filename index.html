@@ -1,49 +1,140 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>TypeScript</h1>
+				<img src="/img/logo.svg" alt="logotype typescript" style="width:140px;height: 140px;">
+				<ul>
+					<li>Superset of JavaScript </li>
+					<li>Compiles to EcmaScript</li>
+					<li>No special runtime </li>
+				</ul>
+				<p><span style="color:red;">In short:</span> Lightweight productivity booster</p>
+			</section>
+			<section>
+				<h5>Based on the Stack Overflow Developer survey in 2019, TypeScript is more "loved" as a programming
+					language than JavaScript</h5>
+				<img src="img/Screenshot_lov.png">
+			</section>
+			<section>
+				<h2>What is TypeScript</h2>
+				<ul>
+					<li>Helps in large scale JavaScript application development.</li>
+					<li>Adds additional features like Static Type (optional), Class, Module etc (that are not present in
+						JavaScript) to JavaScript.</li>
+					<li>Starts with JavaScript, ends with JavaScript. TypeScipt is JavaScript. Any valid .js file can be
+						renamed .ts and compiled with other TypeScript files.</li>
+					<li>TypeScript purposefully borrows ideas from EcmaScript 6 (ES6 Harmony) spec – class, module.</li>
+					<li>Open Source – The compiler is an open source project and released under the Apache 2.0 license.
+					</li>
+					<li>Runs on Any browser, Any host, Any OS.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>How it worked</h2>
+				<ul><img src="img/Install1.png" alt="Install">Installing Typescript</ul>
+				<ul><img src="img/application-xml.png" alt="Text Editors">Text Editors Support</ul>
+				<ul><img src="img/application-x-python-bytecode.png" alt="Compiling to JavaScript">Compiling to
+					JavaScript</ul>
+			</section>
+			<section>
+				<h3>Installing TypeScript</h3>
+				<ul>
+					<li>Visual Studio 2013</li>
+					<li>> npm i -g typescript</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Building your first TypeScript file</h2>
+				<code>"greeter.ts"</code>
+				<img src="img/Screenshot_2.png">
+			</section>
+			<section>
+				<h2>Compiling your code</h2><img src="img/Screenshot_1.png">
+				<p> # Initializes a watcher process that will keep main.js up to date. </p>
+				<img src="img/Screenshot_8.png" alt="Initializes a watcher process">
+			</section>
+			<section>
+				<h2>Add TypeScript </h2>
+				<img src="img/Screenshot_3.png">
+			</section>
+			<section>
+				<h2>Type annotations</h2>
+				<img src="img/Screenshot_4.png">
+				<img src="img/Screenshot_5.png">
+				<img src="img/Screenshot_9.png">
+			</section>
+			<section>
+				<h2>Your code already has types</h2>
+				<img src="img/Screenshot_10.png">
+			</section>
+			<section>
+				<h2>Interfaces</h2>
+				<img src="img/Screenshot_6.png">
+				<img src="#">
+			</section>
+			<section>
+				<h2>Classes</h2>
+				<img src="img/Screenshot_7.png">
+				<img src="#">
+			</section>
+
+			<section>
+				<h2>Thanks!</h2>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
